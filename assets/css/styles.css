@@ -1,0 +1,118 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --Dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container header {
+  width: 100%;
+  height: 35%;
+}
+.container header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  inset: 0;
+}
+.container main {
+  width: 100%;
+  height: 65%;
+  background-color: var(--Light-pink);
+}
+.container .accordion-menu {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--White);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .accordion-menu .title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.container .accordion-menu .title h1 {
+  font-size: 36px;
+  color: var(--Dark-purple);
+}
+.container .accordion-menu .accordions {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+.container .accordion-menu .accordions .accordion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  background-color: var(--White);
+  outline: none;
+  border: none;
+  padding: 20px 0;
+  cursor: pointer;
+  border-bottom: 1px solid var(--Light-pink);
+}
+.container .accordion-menu .accordions .accordion h2 {
+  color: var(--Dark-purple);
+  font-size: 16px;
+}
+.container .accordion-menu .accordions .accordion h2:hover {
+  color: #AD28EB;
+}
+.container .accordion-menu .accordions .accordion .text {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+  display: none;
+  padding-top: 20px;
+  background-color: var(--White);
+}
+.container .accordion-menu .accordions .accordion .text p {
+  text-align: left;
+  color: var(--Grayish-purple);
+  font-size: 14px;
+}
+.container .accordion-menu .accordions .last-button {
+  border-bottom: none;
+}/*# sourceMappingURL=styles.css.map */
