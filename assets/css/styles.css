@@ -29,6 +29,11 @@ html {
   width: 100%;
   height: auto;
 }
+@media (max-width: 1080px) {
+  .container header {
+    height: 50%;
+  }
+}
 .container header img {
   width: 100%;
   height: 100%;
@@ -54,6 +59,23 @@ html {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+}
+@media (max-width: 1720px) {
+  .container .accordion-menu {
+    width: 40%;
+  }
+}
+@media (max-width: 1300px) {
+  .container .accordion-menu {
+    width: 50%;
+  }
+}
+@media (max-width: 1080px) {
+  .container .accordion-menu {
+    width: 90%;
+    max-height: 80%;
+  }
 }
 .container .accordion-menu .title {
   width: 100%;

@@ -24,10 +24,14 @@ html {
     display: flex;
     flex-direction: column;
     position: relative;
+    
 
     header {
         width: 100%;
         height: auto;
+        @media (max-width: 1080px) {
+            height: 50%;
+        }
         
         img {
             width: 100%;
@@ -55,6 +59,17 @@ html {
         border-radius: 10px;
         display: flex;
         flex-direction: column;
+        overflow-y: auto;
+        @media (max-width: 1720px) {
+            width: 40%;
+        }
+        @media (max-width: 1300px) {
+            width: 50%;
+        }
+        @media (max-width: 1080px) {
+            width: 90%;
+            max-height: 80%;
+        }
 
         .title {
             width: 100%;
